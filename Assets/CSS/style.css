@@ -1,0 +1,67 @@
+/*==========================
+  style.css
+
+Index
+- General
+- Headings
+- Sections
+==========================*/
+
+/*==========================
+General Styles
+==========================*/
+
+h2 {
+  background-color: lightgray;
+  height: 50px;
+}
+
+img {
+  width: 100%;
+}
+
+iframe {
+  min-height: 300px;
+  width: 100%;
+}
+
+/*=========================
+Heading Styles
+=========================*/
+
+h1.title {
+  background-color: lightblue;
+  height: 90px;
+}
+
+/*=========================
+Section Styles
+========================*/
+
+section#dataviz, section#databrokerage {
+  display: grid;
+  grid-gap: 20px;
+  grid-template-columns: 1fr 1fr;
+}
+
+@media (max-width: 425px){
+  section#dataviz, section#databrokerage {
+    grid-template-columns: 1fr;
+  }
+  section#databrokerage {
+    grid-template-rows: 1fr 1fr;
+  }
+  div.explainedvideo {
+    grid-row-start: 1;
+    grid-row-end: 2;
+    place-self: center;
+  }
+  div.databrokerageexp {
+    grid-row-start: 2;
+    grid-row-end: 3;
+  }
+}
+
+section.website {
+  align-content: center;
+}
